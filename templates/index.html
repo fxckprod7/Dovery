@@ -6,14 +6,71 @@
 
 {% block content %}
     <div class="wrapper">
-        <div class="content">
-            <span class="app-name">Do<span class="orange">very</span></span>
-            <span class="slogan">Smart Delivery.</span>
-            <span class="description">Dovery revolutionizes grocery shopping in <br>
-                Ireland with AI-driven meal plans, seamless <br>
-                delivery, and budget-friendly features — all in <br>
-                one smart food solution.</span>
-            <a href="/about" class="learn-more-button"><span>Learn More</span></a>
+        <div class="top-content">
+            <div class="content">
+                <span class="app-name">Do<span class="orange">very</span></span>
+                <span class="slogan">Smart Delivery.</span>
+                <span class="description">Dovery revolutionizes grocery shopping in <br>
+                    Ireland with AI-driven meal plans, seamless <br>
+                    delivery, and budget-friendly features — all in <br>
+                    one smart food solution.</span>
+                <a href="/about" class="learn-more-button"><span>Learn More</span></a>
+            </div>
+            <div class="info">
+                <div class="column">
+
+                    <div class="item">
+                        <img src="{{ url_for('static', filename='images/landing/smart_meals.png') }}" alt="">
+                        <div class="cont">
+                            <span class="name">Smart Meals</span>
+                            <span class="description">AI-powered meal planning for your lifestyle.</span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="{{ url_for('static', filename='images/landing/budget.png') }}" alt="">
+                        <div class="cont">
+                            <span class="name">Budget Lists</span>
+                            <span class="description">Auto grocery lists with budget tips.</span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="{{ url_for('static', filename='images/landing/delivery.png') }}" alt="">
+                        <div class="cont">
+                            <span class="name">Delivery</span>
+                            <span class="description">Fast delivery from trusted stores.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+
+                    <div class="item">
+                        <img src="{{ url_for('static', filename='images/landing/track.png') }}" alt="">
+                        <div class="cont">
+                            <span class="name">Track & Manage</span>
+                            <span class="description">Calorie tracking & inventory management.</span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="{{ url_for('static', filename='images/landing/quick.png') }}" alt="">
+                        <div class="cont">
+                            <span class="name">Quick Meals</span>
+                            <span class="description">Time-saving meal prep for busy schedules.</span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="{{ url_for('static', filename='images/landing/custom.png') }}" alt="">
+                        <div class="cont">
+                            <span class="name">Custom Recipes</span>
+                            <span class="description">Custom recipes for your goals.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}
