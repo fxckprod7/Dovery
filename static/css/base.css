@@ -1,0 +1,61 @@
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+
+    background-color: white;
+}
+
+.container{
+    width: 100%;
+    max-width: 1312px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.navbar{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1440px;
+
+    margin: 0 auto;
+    padding: 20px 32px;
+
+    /* background-color: aqua; */
+}
+
+.navbar .logo{
+    font-size: 22px;
+    font-weight: 700;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.navbar .nav-links{
+    display: flex;
+    gap: 40px;
+}
+
+.navbar .nav-links .active{
+    text-decoration: underline;
+}
+
+.navbar .nav-links a:hover{
+    text-decoration: underline;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+}
+
+.orange{
+    color: #F76F00;
+}

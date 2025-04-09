@@ -3,12 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
-    <title>Dovery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    {% block styles %}
+    {% endblock %}
+
+    {% if title %}
+        <title>Dovery | {{ title }}</title>
+    {% else %}
+        <title>Dovery</title>
+    {% endif %}
 </head>
 <body>
-    {% block content %}
-    {% endblock %}
+
+    {% if not title == "Home" %}
+        <nav class="navbar">
+            <a href="/home" class="logo">Do<span class="orange">very</span></a>
+            <ul class="nav-links">
+                <li><a class="{% if title == 'About' %}active{% endif %}" href="/about">About</a></li>
+                <li><a class="{% if title == 'Market & Customer' %}active{% endif %}" href="/market-customer">Market & Customer</a></li>
+                <li><a class="{% if title == 'Business' %}active{% endif %}" href="/business">Business</a></li>
+                <li><a class="{% if title == 'Team' %}active{% endif %}" href="/team">Team</a></li>
+            </ul>
+            <a href="/contact-us">Contact Us</a>
+        </nav>
+    {% endif %}
+
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
 </body>
 </html>
