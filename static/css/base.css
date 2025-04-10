@@ -45,6 +45,11 @@ b{
     font-weight: 700;
 }
 
+a{
+    text-decoration: none;
+    color: #333333;
+}
+
 ::selection {
     background-color: #F76F00;
     color: #333333;

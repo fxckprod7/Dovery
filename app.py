@@ -25,5 +25,10 @@ def business():
     return render_template('business.html', title='Business')
 
 
+@app.route('/team')
+def team():
+    return render_template('team.html', title='Team')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
