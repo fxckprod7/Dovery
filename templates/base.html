@@ -41,8 +41,19 @@
         {% endblock %}
     </div>
 
+    {% if not title == "Home" %}
+        <footer class="footer">
+            <div class="top">
+                <h1>Fast. Smart. Comfortable.</h1>
+                <span>Made with passion by students at DCU 💡</span>
+            </div>
+            <div class="line"></div>
+            <span style="font-size: 14px;">© 2025 Dovery. All Rights Reserved. </span>
+        </footer>
+    {% endif %}
+
     {% block scripts %}
     {% endblock %}
-    
+
 </body>
 </html>
