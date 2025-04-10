@@ -41,6 +41,11 @@ img{
     -webkit-user-drag: none;
 }
 
+::selection {
+    background-color: #F76F00;
+    color: #333333;
+}
+
 .container{
     width: 100%;
     max-width: 1312px;
@@ -88,7 +93,7 @@ img{
 }
 
 .navbar .nav-links .active{
-    border-bottom: 1px solid #F76F00;
+    border-bottom: 1px solid #333333;
 }
 
 .navbar .nav-links a:hover{

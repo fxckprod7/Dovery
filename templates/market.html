@@ -18,7 +18,18 @@
                     &emsp;💸 Budget-conscious shoppers
                 </span>
             </div>
-            <!-- TODO: SLIDER -->
+            <div class="slider">
+                <div class="slides">
+                    <img src="{{ url_for('static', filename='images/market/mariana.png') }}" alt="" class="slide">
+                    <img src="{{ url_for('static', filename='images/market/mark.png') }}" alt="" class="slide">
+                    <img src="{{ url_for('static', filename='images/market/eva.png') }}" alt="" class="slide">
+                </div>
+                <div class="controls">
+                    <button onclick="showSlide(0)"></button> 
+                    <button onclick="showSlide(1)"></button> 
+                    <button onclick="showSlide(2)"></button>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -32,7 +43,10 @@
                     <span>🧠 More advanced than MyFitnessPal — Dovery integrates meal planning, shopping, and tracking in one.</span> <br>
                 </span>
             </div>
-            <!-- TODO: SLIDER -->
         </div>
     </section>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='js/slider.js') }}"></script>
 {% endblock %}

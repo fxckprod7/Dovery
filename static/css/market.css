@@ -17,6 +17,69 @@ section{
                 line-height: 30px;
             }
         }
+
+        .slider{
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+            /* width: 100%; */
+            /* margin: auto; */
+            
+            /* overflow: hidden; */
+        
+            img{
+                width: 407px;
+                display: none;
+        
+                border-radius: 16px;
+        
+                box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.15);
+            }
+        
+            .displaySlide{
+                display: block;
+            }
+
+            .controls{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                gap: 8px;
+
+                padding-top: 12px;
+
+                button{
+                    margin: 0;
+                    padding: 0;
+
+                    border: none;
+
+                    width: 10px;
+                    height: 10px;
+
+                    border-radius: 50%;
+
+                    background-color: #C4C4C4;
+
+                    transition: 0.1s ease-in-out;
+                }
+
+                button:hover{
+                    background-color: #8a8a8a;
+                    cursor: pointer;
+                }
+
+                .active{
+                    background-color: #333333;
+                }
+            }
+        }
     }
 }
 
