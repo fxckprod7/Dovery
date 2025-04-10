@@ -15,5 +15,10 @@ def about():
     return render_template('about.html', title='About')
 
 
+@app.route('/market-customer')
+def market_customer():
+    return render_template('market.html', title='Market & Customer')
+
+
 if __name__ == '__main__':
     app.run(debug=True)

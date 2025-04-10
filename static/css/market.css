@@ -1,0 +1,44 @@
+section{
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            gap: 32px;
+
+            span{
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+#why-choose-us{
+    justify-content: center;
+    align-items: center;
+
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .info{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            .description{
+                line-height: 30px;
+            }
+        }
+    }
+}

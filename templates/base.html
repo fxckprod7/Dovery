@@ -25,14 +25,14 @@
 
     {% if not title == "Home" %}
         <nav class="navbar">
-            <a href="/home" class="logo">Do<span class="orange">very</span></a>
+            <a href="/home" class="logo"><span class="orange">Dovery</span></a>
             <ul class="nav-links">
                 <li><a class="{% if title == 'About' %}active{% endif %}" href="/about">About</a></li>
                 <li><a class="{% if title == 'Market & Customer' %}active{% endif %}" href="/market-customer">Market & Customer</a></li>
                 <li><a class="{% if title == 'Business' %}active{% endif %}" href="/business">Business</a></li>
                 <li><a class="{% if title == 'Team' %}active{% endif %}" href="/team">Team</a></li>
             </ul>
-            <a href="/contact-us">Contact Us</a>
+            <a class="contact-btn" href="/contact-us">Contact Us</a>
         </nav>
     {% endif %}
 

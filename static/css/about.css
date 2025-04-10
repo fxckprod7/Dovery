@@ -6,19 +6,7 @@
 section{
     position: relative;
 
-    height: 100vh !important;
-    max-width: none;
-
-    z-index: -1;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    gap: 64px;
-
     padding: 0 92px;
-
     /* background: linear-gradient(62deg, rgba(255,255,255,1) 30%, rgba(255,171,136,1) 100%); */
     /* background-color: aquamarine; */
 
@@ -67,8 +55,6 @@ section{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-
-        /* TODO: Finish */
 
         .info{
             display: flex;

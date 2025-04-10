@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/market.css') }}">
+{% endblock %}
+
+{% block content %}
+    <section id="who-is-it-for">
+        <h1>Market & Customer</h1>
+        <div class="content">
+            <div class="info">
+                <h3>Who is it for?</h3>
+                <span>
+                    &emsp;📍 Busy professionals in Dublin <br>
+                    &emsp;👨‍👩‍👧‍👦 Parents juggling work and family <br>
+                    &emsp;🎓 Students cooking on a budget <br>
+                    &emsp;🏋️‍♀️ Health and fitness enthusiasts <br>
+                    &emsp;💸 Budget-conscious shoppers
+                </span>
+            </div>
+            <!-- TODO: SLIDER -->
+        </div>
+    </section>
+
+    <section id="why-choose-us">
+        <div class="content">
+            <div class="info">
+                <h3>Why Choose Us?</h3>
+                <span class="description">
+                    <span>✅ AI-Personalized Meals | ✅ Real-Time Grocery Sync | ✅ Calorie + Budget Tracking</span> <br>
+                    <span>🥇 Unlike UberEats or Just Eat, we don’t just deliver meals — we help plan them smartly.</span> <br>
+                    <span>🧠 More advanced than MyFitnessPal — Dovery integrates meal planning, shopping, and tracking in one.</span> <br>
+                </span>
+            </div>
+            <!-- TODO: SLIDER -->
+        </div>
+    </section>
+{% endblock %}
