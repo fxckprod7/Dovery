@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, redirect
 
 
 app = Flask(__name__)
@@ -28,6 +28,11 @@ def business():
 @app.route('/team')
 def team():
     return render_template('team.html', title='Team')
+
+
+@app.route('/contact-us')
+def contact_us():
+    return redirect(url_for('team'))
 
 
 if __name__ == '__main__':
