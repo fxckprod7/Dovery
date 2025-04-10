@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock %}
+
+{% block content %}
+    <section id="what-is-dovery">
+        <h1>Product Details</h1>
+        <div class="background-overlay orange-grad"></div>
+        <div class="content">
+            <div class="info">
+                <h3>What is Dovery?</h3>
+                <span>Dovery is an AI-powered grocery delivery app<br>
+                    designed to streamline your entire food<br>
+                    planning experience. From personalized meal<br>
+                    suggestions to smart shopping and seamless<br>
+                    delivery, it’s the ultimate food assistant in your<br> 
+                    pocket.</span>
+            </div>
+            <img class="alg" src="{{ url_for('static', filename='images/about/alghorythm.png') }}" alt="">
+        </div>
+    </section>
+
+    <section id="innovation">
+        <div class="background-overlay purple-grad"></div>
+        <div class="content">
+            <img class="icon" src="{{ url_for('static', filename='images/about/innovation.png') }}" alt="">
+            <div class="info">
+                <h3>Our Innovation:</h3>
+                <span>Personalized meal generation based on your preferences, budget, and health goals.<br><br>
+                    Real-time grocery inventory management and one-click order placement.<br><br>
+                    Integration with local stores for faster, more sustainable delivery.</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="edge">
+        <div class="background-overlay blue-grad"></div>
+        <div class="content">
+            <div class="info">
+                <h3>Our Edge:</h3>
+                <span>Unlike standard delivery apps or static recipe <br>
+                    platforms, Dovery combines health tracking, <br>
+                    automation, and personalized planning — all in <br>
+                    one sleek app.</span>
+            </div>
+            <img class="icon" src="{{ url_for('static', filename='images/about/edge.png') }}" alt="">
+        </div>
+    </section>
+
+    <section id="revenue">
+        <div class="background-overlay green-grad"></div>
+        <div class="content">
+            <img class="icon" src="{{ url_for('static', filename='images/about/revenue.png') }}" alt="">
+            <div class="info">
+                <h3>Revenue Model Snapshot:</h3>
+                <span>We earn through a mix of order commissions, <br>
+                    partnerships with local supermarkets, and premium <br>
+                    subscriptions with exclusive perks.</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="target-users">
+        <div class="background-overlay red-grad"></div>
+        <div class="content">
+            <div class="info">
+                <h3>Target Users:</h3>
+                <span>Time-strapped workers, busy parents, students <br>
+                    on a budget, and fitness lovers who want <br>
+                    smarter, healthier eating without the hassle.</span>
+            </div>
+            <img class="icon" src="{{ url_for('static', filename='images/about/target.png') }}" alt="">
+        </div>
+    </section>
+{% endblock %}

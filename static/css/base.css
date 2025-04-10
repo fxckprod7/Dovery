@@ -1,9 +1,30 @@
 body{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 24px;
+    color: #333333;
 
     background-color: white;
+}
+
+h1{
+    font-size: 80px;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 48px;
+}
+
+img{
+    -webkit-user-drag: none;
 }
 
 .container{
@@ -14,6 +35,8 @@ body{
 }
 
 .navbar{
+    position: absolute;
+
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 
@@ -24,10 +47,12 @@ body{
     width: 100%;
     max-width: 1312px;
 
+    z-index: 50;
+
     margin: 0 auto;
     padding: 20px 32px;
 
-    /* background-color: aqua; */
+    /* background-color: #ea8bfb; */
 }
 
 .navbar .logo{
