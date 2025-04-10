@@ -1,0 +1,35 @@
+section{
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            gap: 32px;
+
+            span{
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+.centered{
+    .content{
+        justify-content: center;
+
+        .info{
+            align-items: center;
+
+            span{
+                text-align: center;
+            }
+        }
+    }
+}

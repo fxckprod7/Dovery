@@ -41,6 +41,10 @@ img{
     -webkit-user-drag: none;
 }
 
+b{
+    font-weight: 700;
+}
+
 ::selection {
     background-color: #F76F00;
     color: #333333;
